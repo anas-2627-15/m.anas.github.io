@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2026-04-05
-categories: [My_Portfolio,Introduction]
+categories: [My_Portfolio,Introduction,My_University_Life]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 
