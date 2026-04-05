@@ -1,15 +1,34 @@
 ---
 title: "My University Journey"
-categories: [Portfolio]
+date: 2026-04-05
+categories: [Blog]
+tags: [Journey]
 ---
-## Introduction
 
-I am a Computer Engineering student at UET Faisalabad, with a strong interest in the integration of hardware, software, and data systems. My passion for technology originated from a curiosity to understand how computing systems operate, how electronic circuits function, and how data can be leveraged to develop effective and meaningful solutions.
+My journey at UET Faisalabad began with curiosity and excitement. Entering the field of Computer Engineering opened the door to a world where hardware and software work together to solve real-world problems.
 
-## Academic Journey
+On my first day, I was both nervous and motivated. Over time, I learned how systems work, how logic is built, and how ideas can be transformed into solutions.
 
-My academic journey began with a sense of enthusiasm and determination, particularly during my first day at university, where I was introduced to practical labs and a dynamic learning environment. Since then, I have consistently engaged in learning, experimentation, and problem-solving, which has significantly enhanced my technical knowledge and analytical thinking.
+This journey continues to shape my mindset as a learner and future engineer.
 
-## Engineering Perspective
+## 👋 My Journey in Computer Engineering
 
-I view engineering as more than just problem-solving; it is the discipline of designing and developing systems that are efficient, reliable, and impactful, while maintaining simplicity and usability.
+Hello! I'm **Muhammad Anas Shaheer**, a Computer Engineering student passionate about exploring the connection between **hardware, software, and data systems**. My journey in technology started with curiosity — understanding how systems work, how circuits behave, and how data can be transformed into meaningful solutions.
+
+### 🚀 Current Focus
+- Machine Learning Model Training  
+- Digital Logic Design (DLD)  
+- Database Management using MySQL  
+
+### 🛠️ Skills
+- Python  
+- C#  
+- MySQL Queries  
+- Problem Solving  
+
+### 🎯 Goal
+I aim to build innovative and efficient solutions that solve real-world problems and contribute to the field of technology.
+
+---
+
+👉 *This portfolio represents my learning journey, projects, and continuous growth in the world of Computer Engineering.*
