@@ -1,8 +1,8 @@
 ---
 title: "Understanding Digital Logic Design and Circuit Implementation"
 date: 2026-04-06
-categories: [blog,DLD blogs]
-tags: [logic gates, microwind, circuits]
+categories: [Blogs,DLD_blogs]
+tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 
 ##  Understanding Digital Logic Design and Circuit Implementation
