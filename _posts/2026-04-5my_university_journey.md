@@ -1,3 +1,7 @@
+---
+title: "My University Journey"
+categories: [My University Journey]
+---
 ## Introduction
 
 I am a Computer Engineering student at UET Faisalabad, with a strong interest in the integration of hardware, software, and data systems. My passion for technology originated from a curiosity to understand how computing systems operate, how electronic circuits function, and how data can be leveraged to develop effective and meaningful solutions.
