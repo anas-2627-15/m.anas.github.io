@@ -1,6 +1,6 @@
 ---
 title: "My University Journey"
-categories: [My University Journey]
+categories: [Portfolio]
 ---
 ## Introduction
 
