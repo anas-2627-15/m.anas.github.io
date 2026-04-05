@@ -5,7 +5,7 @@ categories: [My_Portfolio,Introduction]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 
-## 👨‍💻 About Me
+##  About Me
 
 I am **Muhammad Anas**, a Computer Engineering student at UET Faisalabad with a strong interest in understanding how technology works at both hardware and software levels. My journey started with curiosity and has grown into a passion for building efficient and meaningful solutions.
 
