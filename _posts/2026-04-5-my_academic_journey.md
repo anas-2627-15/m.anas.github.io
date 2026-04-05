@@ -1,7 +1,7 @@
---
-title: "My_Acadamic_journey"
+---
+title: "My Acadamic journey"
 date: 2026-04-05
-categories: [My_Portfolio,My_Acadamic_journey]
+categories: [My_Portfolio,My Acadamic journey]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 ## 🎓 My Academic journey
