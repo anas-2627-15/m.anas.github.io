@@ -4,23 +4,23 @@ date: 2026-04-05
 categories: [My_Portfolio,My Acadamic journey]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
-## 🎓 My Academic journey
+##  My Academic journey
 
 in Computer Engineering at UET Faisalabad has been a foundation of learning, discipline, and continuous growth. It has enabled me to develop a strong understanding of both theoretical concepts and practical applications. Through structured coursework and hands-on projects, I have built the ability to think critically, solve problems efficiently, and adapt to new technologies.
 
 ---
 
-## 📘 Core Learning Areas
+##  Core Learning Areas
 
-- 💻 **Programming Fundamentals (PF):** Python, C#  
-- 🗄 **Database Systems (DBS):** MySQL  
-- ⚙️ **Digital Logic Design (DLD):** Circuit concepts and design  
-- 🤖 **Machine Learning:** Basic model training and data handling  
-- 🧠 **Problem Solving:** Logical thinking and program designing  
+-  **Programming Fundamentals (PF):** Python, C#  
+-  **Database Systems (DBS):** MySQL  
+-  **Digital Logic Design (DLD):** Circuit concepts and design  
+-  **Machine Learning:** Basic model training and data handling  
+-  **Problem Solving:** Logical thinking and program designing  
 
 ---
 
-## 🛠 Technical Skills
+## Technical Skills
 
 - **Languages:** Python, C#  
 - **Database:** MySQL  
@@ -29,17 +29,17 @@ in Computer Engineering at UET Faisalabad has been a foundation of learning, dis
 
 ---
 
-## 🚀 Academic Projects
+## Academic Projects
 
-- 🔹 ATM Machine Simulation (Python)  
-- 🔹 Number Guessing Game (Python)  
-- 🔹 Basic Machine Learning Model  
-- 🔹 Database Management Project (MySQL)  
-- 🔹 Beginner-Level Circuit Designs (Microwind)  
+-  ATM Machine Simulation (Python)  
+-  Number Guessing Game (Python)  
+-  Basic Machine Learning Model  
+-  Database Management Project (MySQL)  
+-  Beginner-Level Circuit Designs (Microwind)  
 
 ---
 
-## 📈 Learning & Growth
+## Learning & Growth
 
 - Developed strong problem-solving and analytical skills  
 - Improved ability to understand and implement technical concepts  
@@ -48,7 +48,7 @@ in Computer Engineering at UET Faisalabad has been a foundation of learning, dis
 
 ---
 
-## 🔭 Current Focus
+## Current Focus
 
 - Enhancing programming and development skills  
 - Exploring advanced Machine Learning concepts  
@@ -56,12 +56,11 @@ in Computer Engineering at UET Faisalabad has been a foundation of learning, dis
 
 ---
 
-## 🎯 Future Goals
+## Future Goals
 
 - Become a skilled Computer Engineer  
 - Work on innovative and intelligent systems  
 - Contribute to real-world technological solutions  
 
 ---
-
-⭐ *This section highlights academic growth, technical skills, and practical experience in Computer Engineering.*
+*This section highlights academic growth, technical skills, and practical experience in Computer Engineering.*
