@@ -1,34 +1,38 @@
 ---
 title: "My University Journey"
 date: 2026-04-05
-categories: [Blog]
-tags: [Journey]
+categories: [Education, Portfolio]
+tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 
-My journey at UET Faisalabad began with curiosity and excitement. Entering the field of Computer Engineering opened the door to a world where hardware and software work together to solve real-world problems.
+# My University Journey
 
-On my first day, I was both nervous and motivated. Over time, I learned how systems work, how logic is built, and how ideas can be transformed into solutions.
+My journey at **UET Faisalabad** has been a mix of learning, challenges, and growth. As a **Computer Engineering student**, I have explored both hardware and software, developing skills that I am proud to showcase in my portfolio.
 
-This journey continues to shape my mindset as a learner and future engineer.
+## First Impressions
 
-## 👋 My Journey in Computer Engineering
+Starting university was exciting and a bit nerve-wracking. The initial exposure to programming, digital logic, and system design sparked my curiosity and set the foundation for my engineering path.
 
-Hello! I'm **Muhammad Anas Shaheer**, a Computer Engineering student passionate about exploring the connection between **hardware, software, and data systems**. My journey in technology started with curiosity — understanding how systems work, how circuits behave, and how data can be transformed into meaningful solutions.
+## Core Skills Developed
 
-### 🚀 Current Focus
-- Machine Learning Model Training  
-- Digital Logic Design (DLD)  
-- Database Management using MySQL  
+- **Programming:** Gained hands-on experience with C++, Python, and Java.  
+- **Hardware & Circuits:** Learned to design and analyze digital circuits.  
+- **Databases:** Implemented basic database systems and queries.  
 
-### 🛠️ Skills
-- Python  
-- C#  
-- MySQL Queries  
-- Problem Solving  
+## Key Projects
 
-### 🎯 Goal
-I aim to build innovative and efficient solutions that solve real-world problems and contribute to the field of technology.
+- **Mini Calculator App:** Developed using Python with GUI features.  
+- **Digital Logic Simulator:** Built circuits and tested logic gates in simulation.  
+- **Database Management Project:** Created a small database system to store and retrieve student records.
 
----
+## Teamwork & Collaboration
 
-👉 *This portfolio represents my learning journey, projects, and continuous growth in the world of Computer Engineering.*
+Working with peers and mentors taught me problem-solving, communication, and project management skills. Collaboration on group projects helped me understand real-world software development workflows.
+
+## Overcoming Challenges
+
+Balancing theory, practical labs, and projects was tough at times. Learning to plan, prioritize, and stay consistent helped me turn challenges into learning experiences.
+
+## Looking Ahead
+
+I continue to grow as a learner and aspiring engineer. My portfolio reflects not just the knowledge I have gained but also my passion for technology, problem-solving, and continuous improvement.
