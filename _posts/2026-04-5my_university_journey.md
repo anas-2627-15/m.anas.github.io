@@ -33,6 +33,4 @@ Working with peers and mentors taught me problem-solving, communication, and pro
 
 Balancing theory, practical labs, and projects was tough at times. Learning to plan, prioritize, and stay consistent helped me turn challenges into learning experiences.
 
-## Looking Ahead
-
-I continue to grow as a learner and aspiring engineer. My portfolio reflects not just the knowledge I have gained but also my passion for technology, problem-solving, and continuous improvement.
+solving, and continuous improvement.
