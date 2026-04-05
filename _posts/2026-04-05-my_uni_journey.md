@@ -15,13 +15,13 @@ Starting university was exciting and a bit nerve-wracking. The initial exposure 
 
 ## Core Skills Developed
 
-- **Programming:** Gained hands-on experience with C++, Python, and Java.  
+- **Programming:** Gained hands-on experience with C# and Python.  
 - **Hardware & Circuits:** Learned to design and analyze digital circuits.  
-- **Databases:** Implemented basic database systems and queries.  
+- **Databases:** Implemented basic database systems and queries using My SQL.  
 
 ## Key Projects
 
-- **Mini Calculator App:** Developed using Python with GUI features.  
+- **Mini ATM App:** Developed using Python.  
 - **Digital Logic Simulator:** Built circuits and tested logic gates in simulation.  
 - **Database Management Project:** Created a small database system to store and retrieve student records.
 
@@ -30,3 +30,9 @@ Starting university was exciting and a bit nerve-wracking. The initial exposure 
 Working with peers and mentors taught me problem-solving, communication, and project management skills. Collaboration on group projects helped me understand real-world software development workflows.
 
 I continue to grow as a learner and aspiring engineer. My portfolio reflects not just the knowledge I have gained but also my passion for technology, problem-solving, and continuous improvement.
+
+## Overcoming Challenges
+
+Balancing theory, practical labs, and projects was tough at times. Learning to plan, prioritize, and stay consistent helped me turn challenges into learning experiences.
+
+solving, and continuous improvement.
