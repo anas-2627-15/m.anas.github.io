@@ -6,7 +6,7 @@ tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning
 ---
 ## 🎓 My Academic journey
 
-My academic journey in Computer Engineering at UET Faisalabad has been a foundation of learning, discipline, and continuous growth. It has enabled me to develop a strong understanding of both theoretical concepts and practical applications. Through structured coursework and hands-on projects, I have built the ability to think critically, solve problems efficiently, and adapt to new technologies.
+in Computer Engineering at UET Faisalabad has been a foundation of learning, discipline, and continuous growth. It has enabled me to develop a strong understanding of both theoretical concepts and practical applications. Through structured coursework and hands-on projects, I have built the ability to think critically, solve problems efficiently, and adapt to new technologies.
 
 ---
 
