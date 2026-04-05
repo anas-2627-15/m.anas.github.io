@@ -4,7 +4,7 @@ date: 2026-04-05
 categories: [My_Portfolio,My Acadamic journey]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
-![Coding Pic](assets/images/coding-pic.jpg)
+```![Coding Pic](assets/images/coding-pic.jpg)```
 ##  My Academic journey
 
 in Computer Engineering at UET Faisalabad has been a foundation of learning, discipline, and continuous growth. It has enabled me to develop a strong understanding of both theoretical concepts and practical applications. Through structured coursework and hands-on projects, I have built the ability to think critically, solve problems efficiently, and adapt to new technologies.
