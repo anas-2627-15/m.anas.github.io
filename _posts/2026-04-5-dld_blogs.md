@@ -1,9 +1,10 @@
 ---
-title: "Understanding Digital Logic Design and Circuit Implementation"
-date: 2026-04-06
-categories: [Blogs,DLD_blogs]
+title: "Digital Logic Design"
+date: 2026-04-05
+categories: [Blogs,dld_blog]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
+
 
 ##  Understanding Digital Logic Design and Circuit Implementation
 
