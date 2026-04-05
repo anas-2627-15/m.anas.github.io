@@ -1,7 +1,7 @@
 ---
 title: "My University life"
 date: 2026-04-05
-categories: [my_Portfolio,My_university_life]
+categories: [My_Portfolio,My_university_life]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 
