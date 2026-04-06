@@ -5,7 +5,7 @@ categories: [Blogs,dld_blog]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 
-_posts/your-post-name.md
+![Digital LOgic Design](/assets/img/dldd.jpg)
 ##  Understanding Digital Logic Design and Circuit Implementation
 
 During my early semesters in Computer Engineering, I was introduced to Digital Logic Design (DLD), which focuses on how digital systems are built using basic electronic components. This subject helped me understand how hardware works behind software.
