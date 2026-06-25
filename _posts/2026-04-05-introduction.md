@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2026-04-05
-path: /assets/img/posts/anime-coder-workspace-stockcake.jpg
+path: /assets/img/posts/1.jpg
 categories: [My_Portfolio, Introduction]
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
