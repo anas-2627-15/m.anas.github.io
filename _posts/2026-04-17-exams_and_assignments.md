@@ -1,8 +1,10 @@
 ---
 title: "Exams and Assignments: The Final Stretch"
 date: 2026-04-17
+images:
 path: /assets/img/posts/13.jpg
-categories: [My_Portfolio, Journey]
+categories:
+  - Projects & Experience
 tags: [Journey, UET Faisalabad, Computer Engineering, Exams, Reflection, Learning]
 ---
 
