@@ -1,7 +1,7 @@
 ---
 title: "Semester Challenges: What Actually Tested Me"
 date: 2026-04-15
-images:
+image:
   path: /assets/img/posts/11.jpg
 categories:
   - Projects & Experience
