@@ -1,7 +1,7 @@
 ---
 title: "Digital Logic Design"
 date: 2026-04-13
-images:
+image:
   path: /assets/img/posts/9.jpg
 catagories:
   - Course Learning
