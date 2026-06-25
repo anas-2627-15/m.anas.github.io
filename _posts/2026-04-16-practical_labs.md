@@ -1,7 +1,7 @@
 ---
 title: "Practical Labs: Where the Real Learning Happened"
 date: 2026-04-16
-images:
+image:
 path: /assets/img/posts/12.jpg
 categories:
   - Projects & Experience
