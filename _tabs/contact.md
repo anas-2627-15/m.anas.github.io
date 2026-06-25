@@ -22,7 +22,7 @@ https://anas-2627-15.github.io/m.anas.github.io/
 
 ## Email
 
-**Your Email Here**
+**kashifanas327@gmail.com**
 
 ---
 
