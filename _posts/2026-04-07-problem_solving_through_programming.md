@@ -1,8 +1,10 @@
 ---
 title: "Problem Solving Through Programming"
 date: 2026-04-07
-path: /assets/img/posts/1.jpg
-categories: [Blogs, PF_blog]
+images:
+  path: /assets/img/posts/1.jpg
+categories:
+  - Course Learning
 tags: [Journey, UET Faisalabad, Computer Engineering, Problem Solving, Python, Learning]
 ---
 
