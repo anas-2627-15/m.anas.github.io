@@ -1,8 +1,10 @@
 ---
 title: "My Machine Learning Experience"
 date: 2026-04-12
-path: /assets/img/posts/8.jpg
-categories: [Blogs, ML_blog]
+images:
+  path: /assets/img/posts/8.jpg
+categories:
+  - Course Learning
 tags: [Journey, UET Faisalabad, Computer Engineering, Machine Learning, Python, Learning]
 ---
 
