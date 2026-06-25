@@ -1,8 +1,10 @@
 ---
 title: "Programming Fundamentals"
 date: 2026-04-06
-path: /assets/img/posts/3.jpg
-categories: [Blogs, PF_blog]
+images:  
+  path: /assets/img/posts/3.jpg
+categories:
+  - Course Learning
 tags: [Journey, UET Faisalabad, Computer Engineering, Programming, Python, Learning]
 ---
 
