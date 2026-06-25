@@ -1,8 +1,10 @@
 ---
 title: "Database Systems"
 date: 2026-04-08
-path: /assets/img/posts/4.jpg
-categories: [Blogs, Database_blog]
+images:
+  path: /assets/img/posts/4.jpg
+categories:
+  - Course Learning
 tags: [Journey, UET Faisalabad, Computer Engineering, Database, MySQL, Learning]
 ---
 
