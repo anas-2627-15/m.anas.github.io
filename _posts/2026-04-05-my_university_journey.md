@@ -1,7 +1,7 @@
 ---
 title: "My University Journey"
 date: 2026-04-05
-images:
+image:
   path: /assets/img/posts/2.jpg
 categories:
   - Academic Journey
