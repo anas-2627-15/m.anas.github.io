@@ -1,7 +1,8 @@
 ---
 title: "Building My GitHub Digital Footprint"
 date: 2026-04-18
-categories: [My_Portfolio, Journey]
+categories:
+  - Projects & Experience
 tags: [Journey, UET Faisalabad, Computer Engineering, GitHub, Portfolio, Learning]
 ---
 
