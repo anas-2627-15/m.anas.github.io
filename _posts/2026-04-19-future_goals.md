@@ -2,7 +2,7 @@
 title: "Future Goals: Where I Want to Take This"
 date: 2026-04-19
 image:
-path: /assets/img/posts/14.jpg
+  path: /assets/img/posts/14.jpg
 categories:
   - Academic Journey
 tags: [Journey, UET Faisalabad, Computer Engineering, Future, Goals, Learning]
