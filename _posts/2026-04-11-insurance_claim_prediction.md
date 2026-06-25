@@ -2,7 +2,7 @@
 title: "Insurance Claim Prediction: My First End-to-End ML Project"
 date: 2026-04-11
 iamge:
-  path: /assets/img/posts/7.jpg
+  path: /assets/img/posts/7.png
 categories:
   - Projects & Experience
 tags: [Journey, UET Faisalabad, Computer Engineering, Machine Learning, Python, Learning]
