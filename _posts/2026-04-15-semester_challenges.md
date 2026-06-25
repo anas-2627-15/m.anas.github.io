@@ -1,8 +1,10 @@
 ---
 title: "Semester Challenges: What Actually Tested Me"
 date: 2026-04-15
-path: /assets/img/posts/11.jpg
-categories: [My_Portfolio, Journey]
+images:
+  path: /assets/img/posts/11.jpg
+categories:
+  - Projects & Experience
 tags: [Journey, UET Faisalabad, Computer Engineering, Reflection, Learning]
 ---
 
