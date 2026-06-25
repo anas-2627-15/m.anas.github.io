@@ -1,7 +1,7 @@
 ---
 title: "ER Diagrams: Designing Before Building"
 date: 2026-04-10
-images:
+image:
   path: /assets/img/posts/6.jpg
 categories:
   - Course Learning
