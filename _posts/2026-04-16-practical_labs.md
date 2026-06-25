@@ -1,8 +1,10 @@
 ---
 title: "Practical Labs: Where the Real Learning Happened"
 date: 2026-04-16
+images:
 path: /assets/img/posts/12.jpg
-categories: [My_Portfolio, Journey]
+categories:
+  - Projects & Experience
 tags: [Journey, UET Faisalabad, Computer Engineering, Labs, Learning]
 ---
 
