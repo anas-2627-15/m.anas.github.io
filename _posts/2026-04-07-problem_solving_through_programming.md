@@ -1,7 +1,7 @@
 ---
 title: "Problem Solving Through Programming"
 date: 2026-04-07
-images:
+image:
   path: /assets/img/posts/1.jpg
 categories:
   - Course Learning
