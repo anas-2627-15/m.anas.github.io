@@ -1,7 +1,7 @@
 ---
 title: "Future Goals: Where I Want to Take This"
 date: 2026-04-19
-images:
+image:
 path: /assets/img/posts/14.jpg
 categories:
   - Academic Journey
