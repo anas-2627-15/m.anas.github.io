@@ -2,7 +2,7 @@
 title: "ER Diagrams: Designing Before Building"
 date: 2026-04-10
 image:
-  path: /assets/img/posts/6.jpg
+  path: /assets/img/posts/6.png
 categories:
   - Course Learning
 tags: [Journey, UET Faisalabad, Computer Engineering, Database, ER Diagram, Learning]
