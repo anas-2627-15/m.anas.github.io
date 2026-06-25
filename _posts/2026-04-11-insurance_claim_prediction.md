@@ -1,7 +1,7 @@
 ---
 title: "Insurance Claim Prediction: My First End-to-End ML Project"
 date: 2026-04-11
-iamges:
+iamge:
   path: /assets/img/posts/7.jpg
 categories:
   - Projects & Experience
