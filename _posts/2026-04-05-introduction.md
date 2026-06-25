@@ -1,8 +1,10 @@
 ---
 title: "About Me"
 date: 2026-04-05
-path: /assets/img/posts/1.jpg
-categories: [My_Portfolio, Introduction]
+images:
+  path: /assets/img/posts/1.jpg
+categories:
+  - Academic Journey
 tags: [Journey, UET Faisalabad, Computer Engineering, Skills, Projects, Learning, Growth, Motivation]
 ---
 
