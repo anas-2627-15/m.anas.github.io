@@ -1,7 +1,7 @@
 ---
 title: "Database Systems"
 date: 2026-04-08
-images:
+image:
   path: /assets/img/posts/4.jpg
 categories:
   - Course Learning
