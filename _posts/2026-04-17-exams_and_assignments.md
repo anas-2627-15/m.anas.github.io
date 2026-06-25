@@ -1,7 +1,7 @@
 ---
 title: "Exams and Assignments: The Final Stretch"
 date: 2026-04-17
-images:
+image:
 path: /assets/img/posts/13.jpg
 categories:
   - Projects & Experience
