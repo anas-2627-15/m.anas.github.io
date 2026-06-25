@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2026-04-05
-images:
+image:
   path: /assets/img/posts/1.jpg
 categories:
   - Academic Journey
