@@ -1,7 +1,7 @@
 ---
 title: "Programming Fundamentals"
 date: 2026-04-06
-images:  
+image:  
   path: /assets/img/posts/3.jpg
 categories:
   - Course Learning
