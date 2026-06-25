@@ -1,8 +1,10 @@
 ---
 title: "Digital Logic Design"
 date: 2026-04-13
-path: /assets/img/posts/9.jpg
-categories: [Blogs, DLD_blog]
+images:
+  path: /assets/img/posts/9.jpg
+catagories:
+  - Course Learning
 tags: [Journey, UET Faisalabad, Computer Engineering, Digital Logic Design, Learning]
 ---
 
