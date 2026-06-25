@@ -210,11 +210,10 @@ title: Blog
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
   document.querySelectorAll('.folder-card').forEach(function (card) {
-    card.style.cursor = 'pointer';
     card.addEventListener('click', function (e) {
-      if (e.target.tagName.toLowerCase() === 'a') return; // let article links navigate normally
+      if (e.target.tagName.toLowerCase() === 'a') return;
       document.querySelectorAll('.folder-card').forEach(function (c) {
         if (c !== card) c.classList.remove('is-open');
       });
