@@ -1,7 +1,7 @@
 ---
 title: "My Machine Learning Experience"
 date: 2026-04-12
-images:
+image:
   path: /assets/img/posts/8.jpg
 categories:
   - Course Learning
