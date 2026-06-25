@@ -1,8 +1,10 @@
 ---
 title: "My University Journey"
 date: 2026-04-05
-path: /assets/img/posts/2.jpg
-categories: [My_Portfolio, My_University_Journey]
+images:
+  path: /assets/img/posts/2.jpg
+categories:
+  - Academic Journey
 tags: [Journey, UET Faisalabad, Computer Engineering, Learning, Growth]
 ---
 
