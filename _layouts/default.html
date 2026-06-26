@@ -5,18 +5,17 @@ layout: compress
 <!doctype html>
 
 {% include origin-type.html %}
-<style>
-  #main-wrapper {
-  position: relative !important;
-  z-index: 1 !important;
-  margin-left: 0 !important;
-}
+{% include lang.html %}
 
-#sidebar {
-  position: relative !important;
-  z-index: 2 !important;
-}
-  
+<html
+  lang="{{ page.lang | default: site.alt_lang | default: site.lang }}"
+  {%- if site.theme_mode == 'light' or site.theme_mode == 'dark' -%}
+    data-bs-theme="{{ site.theme_mode }}"
+  {%- endif -%}
+>
+  {% include head.html lang=lang %}
+
+  <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
 
 html, body {
@@ -31,183 +30,9 @@ html, body {
   background: rgba(4,7,18,0.97) !important;
   border-right: 1px solid rgba(91,140,255,0.35) !important;
   box-shadow: 0 0 60px rgba(91,140,255,0.2), inset -1px 0 0 rgba(167,139,250,0.1) !important;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 #sidebar .site-title {
-  font-size: 1.6rem !important;
-  background: linear-gradient(135deg, #5b8cff, #a78bfa, #2dd4bf) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  filter: drop-shadow(0 0 20px rgba(91,140,255,0.5)) !important;
-}
-
-#sidebar .site-subtitle {
-  color: rgba(91,140,255,0.6) !important;
-  font-size: 0.72rem !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-}
-
-#sidebar a {
-  transition: all 0.3s ease !important;
-  letter-spacing: 1px !important;
-}
-
-#sidebar a:hover, #sidebar .nav-link.active {
-  color: #a78bfa !important;
-  text-shadow: 0 0 25px rgba(167,139,250,0.9) !important;
-  padding-left: 10px !important;
-}
-
-.post-preview {
-  background: linear-gradient(135deg, rgba(10,14,30,0.95), rgba(6,9,20,0.98)) !important;
-  border: 1px solid rgba(91,140,255,0.2) !important;
-  border-radius: 16px !important;
-  margin-bottom: 1.2rem !important;
-  box-shadow: 
-    0 8px 32px rgba(0,0,0,0.5),
-    inset 0 1px 0 rgba(255,255,255,0.05) !important;
-  backdrop-filter: blur(20px) !important;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
-  overflow: hidden !important;
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-.post-preview::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 0 !important; left: 0 !important; right: 0 !important;
-  height: 2px !important;
-  background: linear-gradient(90deg, #5b8cff, #a78bfa, #2dd4bf) !important;
-  opacity: 0 !important;
-  transition: opacity 0.3s ease !important;
-}
-
-.post-preview::after {
-  content: '' !important;
-  position: absolute !important;
-  inset: 0 !important;
-  background: radial-gradient(ellipse at 50% 0%, rgba(91,140,255,0.08), transparent 70%) !important;
-  opacity: 0 !important;
-  transition: opacity 0.4s ease !important;
-  pointer-events: none !important;
-}
-
-.post-preview:hover::before,
-.post-preview:hover::after {
-  opacity: 1 !important;
-}
-
-.post-preview:hover {
-  border-color: rgba(167,139,250,0.5) !important;
-  box-shadow: 
-    0 20px 60px rgba(91,140,255,0.25),
-    0 0 0 1px rgba(167,139,250,0.15),
-    inset 0 1px 0 rgba(255,255,255,0.08) !important;
-  transform: translateY(-5px) !important;
-}
-
-h1, h2, h3 {
-  background: linear-gradient(135deg, #e5e9f0 30%, #a78bfa) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-}
-
-::-webkit-scrollbar { width: 5px !important; }
-::-webkit-scrollbar-track { background: #03050e !important; }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #5b8cff, #a78bfa) !important;
-  border-radius: 999px !important;
-}
-
-/* Shining grid lines */
-
-#main-wrapper, #sidebar {
-  position: relative !important;
-  z-index: 1 !important;
-}
-</style>
-
-
-{% include lang.html %}
-
-<!-- `site.alt_lang` can specify a language different from the UI -->
-<html
-  lang="{{ page.lang | default: site.alt_lang | default: site.lang }}"
-  {%- if site.theme_mode == 'light' or site.theme_mode == 'dark' -%}
-    data-bs-theme="{{ site.theme_mode }}"
-  {%- endif -%}
->
-  {% include head.html lang=lang %}
-
-  <body>
-    {% include sidebar.html lang=lang %}
-
-    <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container d-flex flex-column px-xxl-5">
-        {% include topbar.html lang=lang %}
-
-        <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
-            {% if layout.layout == 'default' %}
-              {% include refactor-content.html content=content lang=lang %}
-            {% else %}
-              {{ content }}
-            {% endif %}
-          </main>
-
-          <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div class="access">
-              {% include_cached update-list.html lang=lang %}
-              {% include_cached trending-tags.html lang=lang %}
-            </div>
-
-            {% for _include in layout.panel_includes %}
-              {% assign _include_path = _include | append: '.html' %}
-              {% include {{ _include_path }} lang=lang %}
-            {% endfor %}
-          </aside>
-        </div>
-
-        <div class="row">
-          <!-- tail -->
-          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
-            {% for _include in layout.tail_includes %}
-              {% assign _include_path = _include | append: '.html' %}
-              {% include {{ _include_path }} lang=lang %}
-            {% endfor %}
-
-            {% include_cached footer.html lang=lang %}
-          </div>
-        </div>
-
-        {% include_cached search-results.html lang=lang %}
-      </div>
-
-      <aside aria-label="Scroll to Top">
-        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
-          <i class="fas fa-angle-up"></i>
-        </button>
-      </aside>
-    </div>
-
-    <div id="mask" class="d-none position-fixed w-100 h-100 z-1"></div>
-
-    {% if site.pwa.enabled %}
-      {% include_cached notification.html lang=lang %}
-    {% endif %}
-
-    <!-- Embedded scripts -->
-
-    {% for _include in layout.script_includes %}
-      {% assign _include_path = _include | append: '.html' %}
-      {% include {{ _include_path }} %}
-    {% endfor %}
-
-    {% include_cached search-loader.html lang=lang %}
-  </body>
-</html>
+  font
