@@ -5,128 +5,6 @@ layout: compress
 <!doctype html>
 
 {% include origin-type.html %}
-<style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
-
-html, body {
-  background: #04060f !important;
-  background-image: 
-    radial-gradient(ellipse at 15% 15%, rgba(91,140,255,0.25) 0%, transparent 45%),
-    radial-gradient(ellipse at 85% 85%, rgba(167,139,250,0.2) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 50%, rgba(45,212,191,0.06) 0%, transparent 60%) !important;
-}
-
-#sidebar {
-  background: rgba(6,9,20,0.95) !important;
-  border-right: 1px solid rgba(91,140,255,0.3) !important;
-  box-shadow: 0 0 40px rgba(91,140,255,0.15) !important;
-}
-
-#sidebar .site-title {
-  font-size: 1.6rem !important;
-  background: linear-gradient(135deg, #5b8cff, #a78bfa, #2dd4bf) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-}
-
-#sidebar .site-subtitle {
-  color: rgba(91,140,255,0.6) !important;
-  font-size: 0.75rem !important;
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-}
-
-#sidebar a {
-  transition: all 0.3s ease !important;
-  letter-spacing: 1px !important;
-}
-
-#sidebar a:hover, #sidebar .nav-link.active {
-  color: #a78bfa !important;
-  text-shadow: 0 0 20px rgba(167,139,250,0.8) !important;
-  padding-left: 8px !important;
-}
-
-.post-preview {
-  background: linear-gradient(135deg, rgba(13,17,35,0.9), rgba(8,11,24,0.95)) !important;
-  border: 1px solid rgba(91,140,255,0.2) !important;
-  border-radius: 16px !important;
-  margin-bottom: 1.2rem !important;
-  box-shadow: 
-    0 8px 32px rgba(0,0,0,0.4),
-    0 0 0 1px rgba(255,255,255,0.03),
-    inset 0 1px 0 rgba(255,255,255,0.06) !important;
-  backdrop-filter: blur(20px) !important;
-  transition: all 0.4s ease !important;
-  overflow: hidden !important;
-  position: relative !important;
-}
-
-
-.post-preview:hover::before {
-  opacity: 1 !important;
-}
-
-.post-preview:hover {
-  border-color: rgba(167,139,250,0.5) !important;
-  box-shadow: 
-    0 16px 48px rgba(91,140,255,0.2),
-    0 0 0 1px rgba(167,139,250,0.1) !important;
-  transform: translateY(-3px) !important;
-}
-
-h1, h2, h3 {
-  background: linear-gradient(135deg, #e5e9f0, #a78bfa) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-}
-
-::-webkit-scrollbar { width: 5px !important; }
-::-webkit-scrollbar-track { background: #04060f !important; }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #5b8cff, #a78bfa) !important;
-  border-radius: 999px !important;
-}
-</style>
-
-<canvas id="stars"></canvas>
-<script>
-(function(){
-  const c = document.getElementById('stars');
-  const ctx = c.getContext('2d');
-  let stars = [];
-  function resize(){ c.width = window.innerWidth; c.height = window.innerHeight; }
-  function init(){
-    stars = [];
-    for(let i=0;i<150;i++){
-      stars.push({
-        x: Math.random()*c.width,
-        y: Math.random()*c.height,
-        r: Math.random()*1.5+0.3,
-        o: Math.random(),
-        s: (Math.random()-0.5)*0.004
-      });
-    }
-  }
-  function draw(){
-    ctx.clearRect(0,0,c.width,c.height);
-    stars.forEach(s=>{
-      s.o += s.s;
-      if(s.o>1||s.o<0) s.s*=-1;
-      ctx.beginPath();
-      ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(180,200,255,${s.o})`;
-      ctx.fill();
-    });
-    requestAnimationFrame(draw);
-  }
-  window.addEventListener('resize',()=>{resize();init();});
-  resize(); init(); draw();
-})();
-</script>
-
 {% include lang.html %}
 
 <html
@@ -138,6 +16,133 @@ h1, h2, h3 {
   {% include head.html lang=lang %}
 
   <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+      html, body {
+        background: #04060f !important;
+        background-image:
+          radial-gradient(ellipse at 15% 15%, rgba(91,140,255,0.25) 0%, transparent 45%),
+          radial-gradient(ellipse at 85% 85%, rgba(167,139,250,0.2) 0%, transparent 45%),
+          radial-gradient(ellipse at 50% 50%, rgba(45,212,191,0.06) 0%, transparent 60%) !important;
+      }
+
+      #stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      #sidebar {
+        background: rgba(6,9,20,0.95) !important;
+        border-right: 1px solid rgba(91,140,255,0.3) !important;
+        box-shadow: 0 0 40px rgba(91,140,255,0.15) !important;
+      }
+
+      #sidebar .site-title {
+        font-size: 1.6rem !important;
+        background: linear-gradient(135deg, #5b8cff, #a78bfa, #2dd4bf) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+      }
+
+      #sidebar .site-subtitle {
+        color: rgba(91,140,255,0.6) !important;
+        font-size: 0.75rem !important;
+        letter-spacing: 2px !important;
+        text-transform: uppercase !important;
+      }
+
+      #sidebar a {
+        transition: all 0.3s ease !important;
+        letter-spacing: 1px !important;
+      }
+
+      #sidebar a:hover, #sidebar .nav-link.active {
+        color: #a78bfa !important;
+        text-shadow: 0 0 20px rgba(167,139,250,0.8) !important;
+        padding-left: 8px !important;
+      }
+
+      .post-preview {
+        background: linear-gradient(135deg, rgba(13,17,35,0.9), rgba(8,11,24,0.95)) !important;
+        border: 1px solid rgba(91,140,255,0.2) !important;
+        border-radius: 16px !important;
+        margin-bottom: 1.2rem !important;
+        box-shadow:
+          0 8px 32px rgba(0,0,0,0.4),
+          0 0 0 1px rgba(255,255,255,0.03),
+          inset 0 1px 0 rgba(255,255,255,0.06) !important;
+        backdrop-filter: blur(20px) !important;
+        transition: all 0.4s ease !important;
+        overflow: hidden !important;
+        position: relative !important;
+      }
+
+      .post-preview:hover {
+        border-color: rgba(167,139,250,0.5) !important;
+        box-shadow:
+          0 16px 48px rgba(91,140,255,0.2),
+          0 0 0 1px rgba(167,139,250,0.1) !important;
+        transform: translateY(-3px) !important;
+      }
+
+      h1, h2, h3 {
+        background: linear-gradient(135deg, #e5e9f0, #a78bfa) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+      }
+
+      ::-webkit-scrollbar { width: 5px !important; }
+      ::-webkit-scrollbar-track { background: #04060f !important; }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #5b8cff, #a78bfa) !important;
+        border-radius: 999px !important;
+      }
+    </style>
+
+    <canvas id="stars"></canvas>
+    <script>
+      (function(){
+        const c = document.getElementById('stars');
+        const ctx = c.getContext('2d');
+        let stars = [];
+        function resize(){ c.width = window.innerWidth; c.height = window.innerHeight; }
+        function init(){
+          stars = [];
+          for(let i=0;i<150;i++){
+            stars.push({
+              x: Math.random()*c.width,
+              y: Math.random()*c.height,
+              r: Math.random()*1.5+0.3,
+              o: Math.random(),
+              s: (Math.random()-0.5)*0.004
+            });
+          }
+        }
+        function draw(){
+          ctx.clearRect(0,0,c.width,c.height);
+          stars.forEach(s=>{
+            s.o += s.s;
+            if(s.o>1||s.o<0) s.s*=-1;
+            ctx.beginPath();
+            ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+            ctx.fillStyle=`rgba(180,200,255,${s.o})`;
+            ctx.fill();
+          });
+          requestAnimationFrame(draw);
+        }
+        window.addEventListener('resize',()=>{resize();init();});
+        resize(); init(); draw();
+      })();
+    </script>
+
     {% include sidebar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">
