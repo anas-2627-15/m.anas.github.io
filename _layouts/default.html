@@ -16,49 +16,10 @@ html, body {
     radial-gradient(ellipse at 50% 50%, rgba(45,212,191,0.08) 0%, transparent 55%) !important;
 }
 
-/* Aurora animated effect */
-body::after {
-  content: '' !important;
-  position: fixed !important;
-  top: -50% !important;
-  left: -50% !important;
-  width: 200% !important;
-  height: 200% !important;
-  background: 
-    radial-gradient(ellipse at 30% 40%, rgba(91,140,255,0.12) 0%, transparent 35%),
-    radial-gradient(ellipse at 70% 60%, rgba(167,139,250,0.1) 0%, transparent 35%),
-    radial-gradient(ellipse at 50% 80%, rgba(45,212,191,0.07) 0%, transparent 30%) !important;
-  animation: aurora 12s ease-in-out infinite alternate !important;
-  pointer-events: none !important;
-  z-index: 0 !important;
-}
-
-@keyframes aurora {
-  0%   { transform: translate(0%, 0%) rotate(0deg); }
-  33%  { transform: translate(3%, -3%) rotate(2deg); }
-  66%  { transform: translate(-3%, 3%) rotate(-2deg); }
-  100% { transform: translate(2%, -2%) rotate(1deg); }
-}
-
-/* Grid lines */
-body::before {
-  content: '' !important;
-  position: fixed !important;
-  inset: 0 !important;
-  background-image: 
-    linear-gradient(rgba(91,140,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(91,140,255,0.03) 1px, transparent 1px) !important;
-  background-size: 50px 50px !important;
-  pointer-events: none !important;
-  z-index: 0 !important;
-}
-
 #sidebar {
   background: rgba(4,7,18,0.97) !important;
   border-right: 1px solid rgba(91,140,255,0.35) !important;
   box-shadow: 0 0 60px rgba(91,140,255,0.2), inset -1px 0 0 rgba(167,139,250,0.1) !important;
-  position: relative !important;
-  z-index: 10 !important;
 }
 
 #sidebar .site-title {
@@ -113,7 +74,18 @@ body::before {
   transition: opacity 0.3s ease !important;
 }
 
-.post-preview:hover::before {
+.post-preview::after {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: radial-gradient(ellipse at 50% 0%, rgba(91,140,255,0.08), transparent 70%) !important;
+  opacity: 0 !important;
+  transition: opacity 0.4s ease !important;
+  pointer-events: none !important;
+}
+
+.post-preview:hover::before,
+.post-preview:hover::after {
   opacity: 1 !important;
 }
 
@@ -121,8 +93,9 @@ body::before {
   border-color: rgba(167,139,250,0.5) !important;
   box-shadow: 
     0 20px 60px rgba(91,140,255,0.25),
-    0 0 0 1px rgba(167,139,250,0.15) !important;
-  transform: translateY(-4px) !important;
+    0 0 0 1px rgba(167,139,250,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  transform: translateY(-5px) !important;
 }
 
 h1, h2, h3 {
@@ -139,11 +112,98 @@ h1, h2, h3 {
   border-radius: 999px !important;
 }
 
+/* Shining grid lines */
+body::before {
+  content: '' !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background-image: 
+    linear-gradient(rgba(91,140,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91,140,255,0.03) 1px, transparent 1px) !important;
+  background-size: 50px 50px !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
 #main-wrapper, #sidebar {
   position: relative !important;
   z-index: 1 !important;
 }
 </style>
+
+<canvas id="stars"></canvas>
+<script>
+(function(){
+  const c = document.getElementById('stars');
+  const ctx = c.getContext('2d');
+  let stars = [], shootingStars = [];
+  
+  function resize(){ c.width = window.innerWidth; c.height = window.innerHeight; }
+  
+  function init(){
+    stars = [];
+    for(let i=0;i<180;i++){
+      stars.push({
+        x: Math.random()*c.width,
+        y: Math.random()*c.height,
+        r: Math.random()*1.8+0.2,
+        o: Math.random(),
+        s: (Math.random()-0.5)*0.005,
+        color: Math.random() > 0.8 ? 'rgba(167,139,250,' : 'rgba(180,200,255,'
+      });
+    }
+  }
+
+  function addShootingStar(){
+    shootingStars.push({
+      x: Math.random()*c.width*0.7,
+      y: Math.random()*c.height*0.3,
+      len: Math.random()*120+80,
+      speed: Math.random()*8+6,
+      o: 1
+    });
+  }
+
+  setInterval(addShootingStar, 3000);
+
+  function draw(){
+    ctx.clearRect(0,0,c.width,c.height);
+    
+    // Regular stars
+    stars.forEach(s=>{
+      s.o += s.s;
+      if(s.o>1||s.o<0.1) s.s*=-1;
+      ctx.beginPath();
+      ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+      ctx.fillStyle=s.color+s.o+')';
+      ctx.fill();
+    });
+
+    // Shooting stars
+    shootingStars.forEach((s,i)=>{
+      ctx.beginPath();
+      ctx.moveTo(s.x, s.y);
+      ctx.lineTo(s.x - s.len, s.y - s.len*0.4);
+      const grad = ctx.createLinearGradient(s.x, s.y, s.x-s.len, s.y-s.len*0.4);
+      grad.addColorStop(0, `rgba(255,255,255,${s.o})`);
+      grad.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      s.x += s.speed;
+      s.y += s.speed*0.4;
+      s.o -= 0.015;
+      if(s.o <= 0) shootingStars.splice(i,1);
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize',()=>{resize();init();});
+  resize(); init(); draw();
+  c.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;';
+})();
+</script>
 {% include lang.html %}
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
