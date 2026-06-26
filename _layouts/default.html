@@ -9,17 +9,56 @@ layout: compress
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
 
 html, body {
-  background: #04060f !important;
+  background: #03050e !important;
   background-image: 
-    radial-gradient(ellipse at 15% 15%, rgba(91,140,255,0.25) 0%, transparent 45%),
-    radial-gradient(ellipse at 85% 85%, rgba(167,139,250,0.2) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 50%, rgba(45,212,191,0.06) 0%, transparent 60%) !important;
+    radial-gradient(ellipse at 10% 10%, rgba(91,140,255,0.3) 0%, transparent 40%),
+    radial-gradient(ellipse at 90% 90%, rgba(167,139,250,0.25) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 50%, rgba(45,212,191,0.08) 0%, transparent 55%) !important;
+}
+
+/* Aurora animated effect */
+body::after {
+  content: '' !important;
+  position: fixed !important;
+  top: -50% !important;
+  left: -50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  background: 
+    radial-gradient(ellipse at 30% 40%, rgba(91,140,255,0.12) 0%, transparent 35%),
+    radial-gradient(ellipse at 70% 60%, rgba(167,139,250,0.1) 0%, transparent 35%),
+    radial-gradient(ellipse at 50% 80%, rgba(45,212,191,0.07) 0%, transparent 30%) !important;
+  animation: aurora 12s ease-in-out infinite alternate !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+@keyframes aurora {
+  0%   { transform: translate(0%, 0%) rotate(0deg); }
+  33%  { transform: translate(3%, -3%) rotate(2deg); }
+  66%  { transform: translate(-3%, 3%) rotate(-2deg); }
+  100% { transform: translate(2%, -2%) rotate(1deg); }
+}
+
+/* Grid lines */
+body::before {
+  content: '' !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background-image: 
+    linear-gradient(rgba(91,140,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91,140,255,0.03) 1px, transparent 1px) !important;
+  background-size: 50px 50px !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
 }
 
 #sidebar {
-  background: rgba(6,9,20,0.95) !important;
-  border-right: 1px solid rgba(91,140,255,0.3) !important;
-  box-shadow: 0 0 40px rgba(91,140,255,0.15) !important;
+  background: rgba(4,7,18,0.97) !important;
+  border-right: 1px solid rgba(91,140,255,0.35) !important;
+  box-shadow: 0 0 60px rgba(91,140,255,0.2), inset -1px 0 0 rgba(167,139,250,0.1) !important;
+  position: relative !important;
+  z-index: 10 !important;
 }
 
 #sidebar .site-title {
@@ -28,12 +67,13 @@ html, body {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
+  filter: drop-shadow(0 0 20px rgba(91,140,255,0.5)) !important;
 }
 
 #sidebar .site-subtitle {
   color: rgba(91,140,255,0.6) !important;
-  font-size: 0.75rem !important;
-  letter-spacing: 2px !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 3px !important;
   text-transform: uppercase !important;
 }
 
@@ -44,23 +84,23 @@ html, body {
 
 #sidebar a:hover, #sidebar .nav-link.active {
   color: #a78bfa !important;
-  text-shadow: 0 0 20px rgba(167,139,250,0.8) !important;
-  padding-left: 8px !important;
+  text-shadow: 0 0 25px rgba(167,139,250,0.9) !important;
+  padding-left: 10px !important;
 }
 
 .post-preview {
-  background: linear-gradient(135deg, rgba(13,17,35,0.9), rgba(8,11,24,0.95)) !important;
+  background: linear-gradient(135deg, rgba(10,14,30,0.95), rgba(6,9,20,0.98)) !important;
   border: 1px solid rgba(91,140,255,0.2) !important;
   border-radius: 16px !important;
   margin-bottom: 1.2rem !important;
   box-shadow: 
-    0 8px 32px rgba(0,0,0,0.4),
-    0 0 0 1px rgba(255,255,255,0.03),
-    inset 0 1px 0 rgba(255,255,255,0.06) !important;
+    0 8px 32px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.05) !important;
   backdrop-filter: blur(20px) !important;
-  transition: all 0.4s ease !important;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
   overflow: hidden !important;
   position: relative !important;
+  z-index: 1 !important;
 }
 
 .post-preview::before {
@@ -80,61 +120,30 @@ html, body {
 .post-preview:hover {
   border-color: rgba(167,139,250,0.5) !important;
   box-shadow: 
-    0 16px 48px rgba(91,140,255,0.2),
-    0 0 0 1px rgba(167,139,250,0.1) !important;
-  transform: translateY(-3px) !important;
+    0 20px 60px rgba(91,140,255,0.25),
+    0 0 0 1px rgba(167,139,250,0.15) !important;
+  transform: translateY(-4px) !important;
 }
 
 h1, h2, h3 {
-  background: linear-gradient(135deg, #e5e9f0, #a78bfa) !important;
+  background: linear-gradient(135deg, #e5e9f0 30%, #a78bfa) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
 }
 
 ::-webkit-scrollbar { width: 5px !important; }
-::-webkit-scrollbar-track { background: #04060f !important; }
+::-webkit-scrollbar-track { background: #03050e !important; }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, #5b8cff, #a78bfa) !important;
   border-radius: 999px !important;
 }
-</style>
 
-<canvas id="stars"></canvas>
-<script>
-(function(){
-  const c = document.getElementById('stars');
-  const ctx = c.getContext('2d');
-  let stars = [];
-  function resize(){ c.width = window.innerWidth; c.height = window.innerHeight; }
-  function init(){
-    stars = [];
-    for(let i=0;i<150;i++){
-      stars.push({
-        x: Math.random()*c.width,
-        y: Math.random()*c.height,
-        r: Math.random()*1.5+0.3,
-        o: Math.random(),
-        s: (Math.random()-0.5)*0.004
-      });
-    }
-  }
-  function draw(){
-    ctx.clearRect(0,0,c.width,c.height);
-    stars.forEach(s=>{
-      s.o += s.s;
-      if(s.o>1||s.o<0) s.s*=-1;
-      ctx.beginPath();
-      ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(180,200,255,${s.o})`;
-      ctx.fill();
-    });
-    requestAnimationFrame(draw);
-  }
-  window.addEventListener('resize',()=>{resize();init();});
-  resize(); init(); draw();
-})();
-</script>
+#main-wrapper, #sidebar {
+  position: relative !important;
+  z-index: 1 !important;
+}
+</style>
 {% include lang.html %}
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
