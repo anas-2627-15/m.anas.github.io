@@ -8,26 +8,40 @@ layout: compress
 <style>
 html, body {
   background: #070b14 !important;
-  background-image: radial-gradient(ellipse at 0% 0%, rgba(91,140,255,0.15), transparent 50%), radial-gradient(ellipse at 100% 100%, rgba(167,139,250,0.15), transparent 50%) !important;
+  background-image: 
+    radial-gradient(ellipse at 0% 0%, rgba(91,140,255,0.2), transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(167,139,250,0.2), transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(45,212,191,0.08), transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235b8cff' fill-opacity='0.03'%3E%3Ccircle cx='20' cy='20' r='1'/%3E%3C/g%3E%3C/svg%3E") !important;
 }
 
 #sidebar {
   background: linear-gradient(180deg, #0d1123 0%, #0a0d1a 100%) !important;
-  border-right: 1px solid rgba(91,140,255,0.2) !important;
-}
-
-.card, .post-preview, #main-wrapper .container {
-  background: rgba(13,17,35,0.85) !important;
-  border: 1px solid rgba(91,140,255,0.15) !important;
-  backdrop-filter: blur(10px) !important;
+  border-right: 1px solid rgba(91,140,255,0.25) !important;
+  box-shadow: 4px 0 20px rgba(91,140,255,0.08) !important;
 }
 
 .post-preview {
+  background: rgba(13,17,35,0.9) !important;
+  border: 1px solid rgba(91,140,255,0.18) !important;
   border-radius: 12px !important;
   margin-bottom: 1rem !important;
+  box-shadow: 0 4px 20px rgba(91,140,255,0.08) !important;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.post-preview:hover {
+  border-color: rgba(167,139,250,0.4) !important;
+  box-shadow: 0 4px 25px rgba(167,139,250,0.15) !important;
+}
+
+h1, h2, h3, .site-title {
+  background: linear-gradient(135deg, #5b8cff, #a78bfa) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 </style>
-
 {% include lang.html %}
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
